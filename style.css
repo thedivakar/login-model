@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;900&family=Raleway:wght@300&family=Ubuntu:ital,wght@0,400;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    background-image: url(https://images.pexels.com/photos/760645/pexels-photo-760645.jpeg?cs=srgb&dl=pexels-asif-methar-760645.jpg&fm=jpg);
+    padding-top: 200px;
+    padding-left: 580px;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background-color: rgb(201, 128, 45);
+    background-size: cover;
+    background-position: center; 
+    font-family: 'Montserrat', sans-serif;  
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    z-index: 99;
+  
+}
+
+.logo {
+    font-size: 2em;
+    color: white;
+    user-select: none;
+}
+
+.navbar a {
+    position:relative;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transform-origin:right ;
+    transform: scaleX(0);
+    transition: transform.5s;
+}
+
+.navbar a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.but {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: white;
+    font-weight: 500;
+    margin-left:40px ;
+    transition: .5s;
+}
+
+.but:hover {
+    background-color: white;
+    color: rgb(47, 47, 47);
+}
+
+.center {
+    padding: 300px;
+}
+
+.input-box-2 {
+    padding-left: 23px;
+}
+
+.wrapper {
+    position: relative;
+    width: 350px;
+    height: 400px;
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(50px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+}
+
+.form-box h2 {
+    font-size: 2em;
+    color: rgb(219, 217, 217);
+    text-align: center;
+}
+
+.hed {
+    padding-top: 30px;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid rgb(220, 215, 215);
+    margin: 30px 0;
+}
+
+.detail-1 {
+    padding-left: 30px;
+}
+
+.detail-2 {
+    padding-left: 60px;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translate(-50%); 
+    font-size: 1em;
+    color:  rgb(220, 215, 215);
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: white;
+    font-weight: 350;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: rgb(220, 215, 215);
+    line-height: 57px;
+}
+
+.remember-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 8px;
+}
+
+.remember-me {
+    font-size: .9em;
+    color: white;
+    font-weight: 400;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-me label input {
+    accent-color: black;
+    margin-right: 3px;
+}
+
+.remember-me a {
+    color: white;
+    text-decoration: none;
+}
+
+.remember-me a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+   width: 100%;
+   height: 45px;
+   color: white;
+   border: none;
+   outline: none;
+   border-radius: 6px;
+   cursor: pointer;
+   font-size: 1em;
+   color: black;
+   font-weight: 500;
+}
+
+.register-login {
+    font-size: .9em;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.register-login p a {
+    color: rgb(200, 175, 175);
+    text-decoration: none;
+}
+
+.register-login p a:hover {
+    text-decoration: underline;
+}
+
